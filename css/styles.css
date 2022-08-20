@@ -1,0 +1,281 @@
+:root {
+    --main-dark-color: #212121;
+    --main-light-color: #757575;
+    --blue-color: #2196F3;
+    --blue-button-active-color: #188CE8;
+    --grey-button-color: #F5F4FA;
+    --logo-dark-color: #000000;
+    --white-color: #ffffff;
+    --hero-background-color: #2F303A;
+    --header-border-color: #ECECEC;
+    --light-footer-contacts-color: rgba(255, 255, 255, 0.6);
+}
+
+/* General Styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--main-light-color);
+}
+
+/* a {
+    text-decoration: none;
+} */
+
+/* li {
+    list-style: none;
+} */
+
+
+/* Header Styles */
+
+/* header logo */
+
+.header-menu {
+    border-bottom: 1px solid var(--header-border-color);
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: inherit;
+}
+
+.logo,
+.link-nav,
+.link-contact,
+.link-footer,
+.link-images {
+    text-decoration: none;
+}
+
+.logo-blue {
+    color: var(--blue-color);
+}
+
+.logo-black {
+    color: var(--logo-dark-color);
+}
+
+/* header nav and contacts*/
+
+.list {
+    list-style: none;
+}
+
+.header-nav,
+.header-contacts {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.link-nav {
+    color: var(--main-dark-color);
+}
+
+.link-contact {
+    color: var(--main-light-color);
+}
+
+.link-nav:hover,
+.link-nav:focus,
+.link-contact:hover,
+.link-contact:focus,
+.map-address:hover,
+.map-address:focus {
+    color: var(--blue-color);
+}
+
+/* Page 1 (index.html) Styles for main */
+
+/* hero section*/
+
+.hero-section {
+    background-color: var(--hero-background-color);
+}
+
+.hero-title {
+    font-size: 44px;
+    font-style: inherit;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+/* this property for all buttons (Page 1-2) */
+.btns {
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+}
+
+.hero-button {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #188CE8;
+}
+
+
+/* Section with our difference list and witout title h2 */
+
+/* .invisible-title {
+    visibility: hidden;
+} */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.differences-list {
+    font-family: inherit;
+    line-height: inherit;
+    font-size: 14px;
+}
+
+.title-difference {
+    font-weight: 700;
+    color: var(--main-dark-color);
+    text-transform: uppercase;
+}
+
+.description-difference {
+    line-height: 1.71;
+    color: var(--main-light-color);
+}
+
+/* what we do Section*/
+
+.title-what-we-do,
+.title-our-team {
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--main-dark-color);
+}
+
+/* our team Section */
+
+.our-team {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: inherit;
+
+}
+
+.member-team-name {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--main-dark-color);
+}
+
+.member-team-position {
+    color: var(--main-light-color);
+}
+
+/* Styles of Footer part*/
+
+/* logo */
+
+.footer-menu {
+    background-color: var(--hero-background-color);
+}
+
+.logo-white {
+    color: var(--white-color);
+}
+
+.footer-contacts {
+    font-family: inherit;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: inherit;
+    line-height: 1.71;
+}
+
+.map-address {
+    color: var(--white-color);
+}
+
+.mail-contact,
+.tel-contact {
+    color: var(--light-footer-contacts-color);
+}
+
+.mail-contact:hover,
+.mail-contact:focus,
+.tel-contact:hover,
+.tel-contact:focus {
+    color: rgba(33, 150, 243, 1);
+}
+
+
+
+/* Page 2 (portfolio.html) Styles for main */
+
+/* !!!кнопки не наслідують
+    .list-buttons { */
+/* background-color: var(--grey-button-color); */
+/* color: var(--main-dark-color);
+
+    font-size: 16px;
+    line-height: 1.63;
+    font-weight: 500;
+    list-style: none;
+} */
+
+.list-btn {
+    font-weight: 500;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+}
+
+.menu-button:hover,
+.menu-button:focus {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
+.image-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--main-dark-color);
+}
+
+.image-text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: inherit;
+
+    color: var(--main-light-color);
+}
