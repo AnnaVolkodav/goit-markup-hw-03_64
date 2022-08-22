@@ -29,6 +29,10 @@ ul, ol {
     padding-left: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
 body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -47,8 +51,8 @@ body {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* a {
@@ -159,13 +163,13 @@ body {
 /* hero section*/
 
 .hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     background-color: var(--hero-background-color);
 }
 
-.hero-content {
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
+.hero-content
 
 .hero-title {
     margin-right: auto;
@@ -199,13 +203,14 @@ body {
 
     background-color: var(--blue-color);
     color: var(--white-color);
-
     font-family: 'Roboto';
     font-style: normal;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
+
+    border: 0;
 }
 
 .page-hero-btn {
@@ -273,6 +278,10 @@ body {
     color: var(--main-dark-color);
 }
 
+.about {
+    padding-top: 0;
+}
+
 .images-list {
     display: flex;
 }
@@ -312,8 +321,12 @@ body {
     width: 270px;
 }
 
+.about-member {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .member-team-name {
-    margin-top: 30px;
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -322,8 +335,6 @@ body {
 }
 
 .member-team-position {
-    margin-bottom: 30px;
-
     color: var(--main-light-color);
 }
 
@@ -417,7 +428,6 @@ body {
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
-    width: 1200px;
 }
 
 .item-img-menu:not(:nth-child(3)) {
@@ -428,18 +438,24 @@ body {
     background-color: var(--white-color);
 
     width: 370px;
-    border: 1px solid var(--border-portfolio-color);
 }
 
 .item-img-menu:not(:nth-last-child(-n+3)) {
     margin-bottom: 30px;
 }
 
-.link-images 
+.link-images {
+    border: 1px 1px 0 1px solid var(--border-portfolio-color);
+}
 
 .img-dsc {
     display: block;
     padding: 20px 24px;
+
+    border-top: 0;
+    border-bottom: 1px solid var(--border-portfolio-color);
+    border-right: 1px solid var(--border-portfolio-color);
+    border-left: 1px solid var(--border-portfolio-color);
 }
 
 .image-title {
