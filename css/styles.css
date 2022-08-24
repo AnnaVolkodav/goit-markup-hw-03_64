@@ -313,9 +313,8 @@ body {
 .item-our-team {
     flex-basis: calc(100% / 4 - var(--card-set-gap));
     margin-right: 30px;
-
-    background-color: var(--white-color);
     text-align: center;
+    background-color: var(--white-color);
     border-radius: 0px 0px 4px 4px;
 }
 
