@@ -46,7 +46,7 @@ body {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-} 
+}
 
 .container {
     width: 1200px;
@@ -194,6 +194,7 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-size: 16px;
+    border-radius:4px;
 }
 
 .hero-button {
@@ -242,7 +243,8 @@ body {
 
 .differences-list {
     display: flex;
-    column-gap: 30px;
+    flex-wrap: wrap;
+    margin-right: -30px;
 
     font-family: inherit;
     line-height: inherit;
@@ -250,8 +252,8 @@ body {
 }
 
 .difference-item {
-    width: 270px;
-
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
+    margin-right: 30px;
 }
 
 .title-difference {
@@ -295,12 +297,13 @@ body {
 /* our team Section */
 
 .our-team-section {
-    background-color:var(--grey-button-color);
+    background-color: var(--grey-button-color);
 }
 
 .our-team {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
 
     font-family: inherit;
     font-size: 16px;
@@ -313,18 +316,11 @@ body {
 
     background-color: var(--white-color);
     text-align: center;
-
-    /* box-shadow: 
-    0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2); */
+    border-radius: 0px 0px 4px 4px;
 }
 
-/* .item-our-team:not(:last-child) {
-    margin-right: var(--card-set-gap);
 
-    width: 270px;
-} */
+/* white card under image */
 
 .about-member {
     flex-basis: inherit;
@@ -345,6 +341,7 @@ body {
 .member-team-position {
     color: var(--main-light-color);
 }
+
 
 /* Styles of Footer part*/
 
@@ -457,7 +454,7 @@ body {
 
 
 .link-images {
-    border: 1px 1px 0 1px solid var(--border-portfolio-color);
+    /* border: 1px 1px 0 1px solid var(--border-portfolio-color); */
 }
 
 .img-dsc {
