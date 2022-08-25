@@ -300,6 +300,10 @@ body {
     background-color: var(--grey-button-color);
 }
 
+.our-team-section {
+    background-color: var(--grey-button-color);
+}
+
 .our-team {
     display: flex;
     flex-wrap: wrap;
