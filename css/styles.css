@@ -291,14 +291,11 @@ body {
     column-gap: var(--card-set-gap);
 }
 
-.item-images-list
+.item-images-list {
 
+}
 
 /* our team Section */
-
-.our-team-section {
-    background-color: var(--grey-button-color);
-}
 
 .our-team-section {
     background-color: var(--grey-button-color);
